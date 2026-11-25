@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qəhvə Dünyası | Bakı</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+  body { background: #0d1117; color: #c9d1d9; }
+  
+  header {
+    height: 100vh;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+    text-align: center; padding: 20px;
+  }
+  header h1 { font-size: 52px; color: #58a6ff; margin-bottom: 15px; }
+  header p { font-size: 18px; color: #8b949e; max-width: 500px; margin-bottom: 30px; }
+  .btn {
+    padding: 14px 32px; background: #238636; color: white; border: none; border-radius: 8px;
+    font-size: 16px; font-weight: 600; cursor: pointer; transition: .2s;
+  }
+  .btn:hover { background: #2ea043; transform: translateY(-2px); }
+  
+  section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+  h2 { font-size: 32px; color: #58a6ff; margin-bottom: 40px; text-align: center; }
+  
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .card {
+    background: #161b22; border: 1px solid #30363d; border-radius: 12px;
+    padding: 30px; text-align: center; transition: .2s;
+  }
+  .card:hover { border-color: #58a6ff; transform: translateY(-4px); }
+  .card .icon { font-size: 40px; margin-bottom: 15px; }
+  .card h3 { color: #c9d1d9; margin-bottom: 10px; }
+  .card p { color: #8b949e; font-size: 14px; line-height: 1.6; }
+  
+  footer {
+    padding: 40px 20px; text-align: center; color: #484f58; font-size: 13px;
+    border-top: 1px solid #30363d; margin-top: 60px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>☕ Qəhvə Dünyası</h1>
+  <p>Bakının mərkəzində ən təzə qəhvə, ən səmimi mühit. Hər səhər təzə qovrulmuş dənələr.</p>
+  <button class="btn" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Menyuya Bax</button>
+</header>
+
+<section id="menu">
+  <h2>Menyumuz</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">☕</div><h3>Espresso</h3><p>Güclü və qısa. Əsl qəhvə sevənlər üçün. 3 AZN</p></div>
+    <div class="card"><div class="icon">🥛</div><h3>Latte</h3><p>Yumşaq süd köpüyü ilə. Səhər üçün ideal. 5 AZN</p></div>
+    <div class="card"><div class="icon">🍰</div><h3>Türk Qəhvəsi</h3><p>Köz üzərində, ənənəvi üsulla. 4 AZN</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Niyə Biz?</h2>
+  <div class="grid">
+    <div class="card"><div class="icon">🌱</div><h3>Təzə Dənələr</h3><p>Hər həftə yerli qovurucudan təzə qəhvə dənələri alırıq.</p></div>
+    <div class="card"><div class="icon">📍</div><h3>Mərkəzi Yer</h3><p>Metro stansiyasından 2 dəqiqəlik məsafədə.</p></div>
+    <div class="card"><div class="icon">💳</div><h3>Kart Qəbul Edirik</h3><p>Bütün bank kartları və nağd ödəniş.</p></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Qəhvə Dünyası · Bakı, Azərbaycan · +994 50 123 45 67
+</footer>
+
+</body>
+</html>
